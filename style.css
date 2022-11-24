@@ -114,6 +114,9 @@ body{
     background-color: var(--black);
     position: absolute;
     top: 0;
+    display: flex;
+    gap: 12px;
+
 
 
 }
@@ -125,6 +128,20 @@ body{
     background-color: var(--black);
     position: absolute;
     left: 0;
+    color: var(--white);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:montserratbold ,Arial, Helvetica, sans-serif; ;
+    font-size: 5rem;
+    writing-mode: vertical-lr;
+
+}
+
+.side-name{
+    display: inline-block;
+    transform: rotate(180deg);
 
 }
 
@@ -151,9 +168,9 @@ body{
     flex: 1;
     filter: drop-shadow(4px 4px 3px var(--blackShadow));
     font-family: montserratregular;
-    font-size: 1.5rem;
-    min-width:980px;
-    min-height:880px;
+    font-size: 1.3rem;
+    min-width:880px;
+    min-height:680px;
     
 }
 
@@ -170,7 +187,7 @@ body{
     width: 93%;
     height: 90%;
     margin-top: 8%;
-    min-width: 500px;
+    min-width: 300px;
 
 }
 
@@ -189,6 +206,7 @@ body{
     font-size:3rem ;
     margin-top: 50px;
     margin-bottom: 50px;
+    box-sizing: border-box;
 
 }
 
@@ -228,7 +246,7 @@ form{
     padding: 2px;
     background-color: #ffffff;
     border: solid 1px #b7b7b7;
-    border-radius: 10px;
+    
     color: var(--black);
     margin-top: 3px;
     caret-color: transparent;
@@ -259,9 +277,10 @@ label[for="mail"]{
 
 .bottom-form-text-field{
     width: 100%;
-    height: calc(100% - 5rem - 251px);
+    height: calc(100% - 5rem - 200px);
     display: flex;
     flex-direction: column;
+
 }
 
 label[for="msg"]{
@@ -269,7 +288,7 @@ label[for="msg"]{
 }
 
 .text-field{
-    height: 80%;
+    height: 90%;
 }
 
 textarea{
@@ -281,8 +300,7 @@ textarea{
     max-height: 1000px;
     min-width: 350px;
     margin-top: 10px;
-    border: solid 1px #b7b7b7;
-    border-radius: 10px;
+    border: solid 1px #b7b7b7;    
     padding: 1%;
 }
 
