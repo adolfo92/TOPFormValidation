@@ -1,0 +1,211 @@
+/* ------------Reset ---------------------------*/
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* ------------End Of Reset ---------------------------*/
+
+/*-------------Font import ----------------------------*/
+
+
+@font-face {
+    font-family: 'montserrat_alternatesblack';
+    src: url('fonts/montserratalternates-black-webfont.woff2') format('woff2'),
+         url('fonts/montserratalternates-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswaldmedium';
+    src: url('fonts/oswald-medium-webfont.woff2') format('woff2'),
+         url('fonts/oswald-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-------------End of Font Import ---------------------*/
+
+:root{
+
+    /* ---___Custom sizes___--- */
+    --navbar-height:5vh;
+    --sidebar-width:5vw;
+    --rectangular-ratio:(25/10);
+
+    /* ---___Custom colors___--- */
+    --white:#F9F9F9;
+    --black: #222222;
+    --orange: #FB610A;
+    --blackShadow:rgba(0, 0, 0, 0.25);
+
+}
+
+body{
+    position: relative;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.navbar{
+
+    width: 100vw;
+    height: var(--navbar-height);
+    background-color: var(--black);
+    position: absolute;
+    top: 0;
+
+
+}
+
+.sidebar{
+
+    height: 100vh;
+    width: var(--sidebar-width);
+    background-color: var(--black);
+    position: absolute;
+    left: 0;
+
+}
+
+.overBox{
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card{
+
+    width: 85vw ;
+    height:85vh ;
+    position:absolute;
+    background-color: var(--white);
+    margin-left: var(--sidebar-width);
+    margin-top: var(--navbar-height);
+    border: solid 1px var(--black);
+    display: flex;
+    flex: 1;
+    filter: drop-shadow(4px 4px 3px var(--blackShadow));
+    font-family: montserratregular;
+    font-size: 2rem;
+    
+}
+
+.left-card{
+    width: calc(32% * --rectangular-ratio); /* idk how i pull this out but it works, it's like black magick*/
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-card > img{
+
+    width: 93%;
+    height: 90%;
+    margin-top: 8%;
+    min-width: 500px;
+
+}
+
+.right-card{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.right-card > h1{
+    margin: 20px;
+    font-family: montserratregular ,Arial, Helvetica, sans-serif;
+    font-size:5rem ;
+
+}
+
+.form-space{
+    display: flex;
+    height: 90%;
+}
+
+
+.input-field > label{
+    display: inline-block;
+    width: 200px;
+}
+
+.input-field > input{
+
+    width: 350px;
+    height: 40px;
+    padding: 2px;
+    background-color: var(--white);
+    border: solid 1px #b7b7b7;
+    border-radius: 10px;
+
+}
+
+label[for="mail"]{
+    width: 250px;
+}
