@@ -10,6 +10,11 @@ button {
   box-sizing: border-box;
 }
 
+form{
+    margin: 0;
+    padding: 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -147,6 +152,8 @@ body{
     filter: drop-shadow(4px 4px 3px var(--blackShadow));
     font-family: montserratregular;
     font-size: 2rem;
+    min-width:980px;
+    min-height:880px;
     
 }
 
@@ -174,25 +181,44 @@ body{
     align-items: center;
     justify-content: center;
     flex: 1;
-
 }
 
 .right-card > h1{
     margin: 20px;
     font-family: montserratregular ,Arial, Helvetica, sans-serif;
     font-size:5rem ;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
 .form-space{
     display: flex;
     height: 90%;
+    width: 100%;
+}
+
+form{
+    width: 100%;
+}
+
+.top-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-field{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 
 .input-field > label{
     display: inline-block;
-    width: 200px;
+    width: 185px;
 }
 
 .input-field > input{
@@ -200,12 +226,112 @@ body{
     width: 350px;
     height: 40px;
     padding: 2px;
-    background-color: var(--white);
+    background-color: #ffffff;
     border: solid 1px #b7b7b7;
     border-radius: 10px;
+    color: var(--black);
+    margin-top: 3px;
+    caret-color: transparent;
+}
+
+.input-field > input:focus{
+    outline: none;
+    border-color: var(--orange);
+    border-width: 3px;
+}
+
+.input-field > input:hover{
+
+    border-color: var(--orange);
+
+}
+
+.name-field{
+
+    margin-right: 50px;
 
 }
 
 label[for="mail"]{
     width: 250px;
+}
+
+
+input[type="email"]{
+    width: 70%;
+    min-width: 350px;
+    max-width: 600px;
+}
+
+.bottom-form-text-field{
+    width: 100%;
+    height: calc(100% - 5rem - 251px);
+    display: flex;
+    flex-direction: column;
+}
+
+label[for="msg"]{
+    width: 250px;
+}
+
+.text-field{
+    height: 80%;
+}
+
+textarea{
+    resize: none;
+    color: var(--black);
+    width: 80%;
+    height:100%;
+    min-height: 50px;
+    max-height: 1000px;
+    min-width: 350px;
+    margin-top: 10px;
+    border: solid 1px #b7b7b7;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+textarea:focus{
+    outline: none;
+    border-color: var(--orange);
+    border-width: 3px;
+}
+
+textarea:hover{
+
+    border-color: var(--orange);
+
+}
+
+button[type="submit"]{
+    width:200px;
+    height:50px;
+    margin-top: 10px;
+    background-color: var(--white);
+    border: solid 2px var(--black);    
+    box-shadow: var(--black) -4px 4px 0px;
+    
+    
+}
+
+button[type="submit"]:hover{
+    transition: ease-in 0.07s;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none; 
+    
+}
+
+button[type="submit"]:active{
+    transition: ease-in 0.07s;
+    background-color: var(--black);
+    color: var(--white);
+    border: none; 
+    
+}
+
+:placeholder-shown{
+    color: #ddd5d53d;
+    font-size: 1em;
 }
