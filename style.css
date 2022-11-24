@@ -151,7 +151,7 @@ body{
     flex: 1;
     filter: drop-shadow(4px 4px 3px var(--blackShadow));
     font-family: montserratregular;
-    font-size: 2rem;
+    font-size: 1.5rem;
     min-width:980px;
     min-height:880px;
     
@@ -186,7 +186,7 @@ body{
 .right-card > h1{
     margin: 20px;
     font-family: montserratregular ,Arial, Helvetica, sans-serif;
-    font-size:5rem ;
+    font-size:3rem ;
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -223,8 +223,8 @@ form{
 
 .input-field > input{
 
-    width: 350px;
-    height: 40px;
+    width: 300px;
+    height: 30px;
     padding: 2px;
     background-color: #ffffff;
     border: solid 1px #b7b7b7;
@@ -256,12 +256,6 @@ label[for="mail"]{
     width: 250px;
 }
 
-
-input[type="email"]{
-    width: 70%;
-    min-width: 350px;
-    max-width: 600px;
-}
 
 .bottom-form-text-field{
     width: 100%;
