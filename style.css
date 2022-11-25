@@ -254,7 +254,7 @@ form{
     
     color: var(--black);
     margin-top: 3px;
-    caret-color: transparent;
+    caret-color: var(--orange);
 }
 
 .input-field > input:focus{
