@@ -111,11 +111,13 @@ body{
 
     width: 100vw;
     height: var(--navbar-height);
+    min-height: 45px;
     background-color: var(--black);
     position: absolute;
     top: 0;
     display: flex;
     gap: 12px;
+    z-index: 3;
 
 
 
@@ -125,6 +127,7 @@ body{
 
     height: 100vh;
     width: var(--sidebar-width);
+    min-width: 75px;
     background-color: var(--black);
     position: absolute;
     left: 0;
@@ -136,13 +139,13 @@ body{
     font-family:montserratbold ,Arial, Helvetica, sans-serif; ;
     font-size: 5rem;
     writing-mode: vertical-lr;
+    z-index: 3;
 
 }
 
 .side-name{
     display: inline-block;
     transform: rotate(180deg);
-
 }
 
 .overBox{
@@ -153,12 +156,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .main-card{
 
     width: 85vw ;
+    min-width:880px;
+    max-width: 1400px;
     height:85vh ;
+    min-height:680px;
+    max-height:850px;
     position:absolute;
     background-color: var(--white);
     margin-left: var(--sidebar-width);
@@ -168,10 +176,7 @@ body{
     flex: 1;
     filter: drop-shadow(4px 4px 3px var(--blackShadow));
     font-family: montserratregular;
-    font-size: 1.3rem;
-    min-width:880px;
-    min-height:680px;
-    
+    font-size: 1.3rem;    
 }
 
 .left-card{
